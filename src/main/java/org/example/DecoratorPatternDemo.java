@@ -8,8 +8,12 @@ public class DecoratorPatternDemo {
         // Samma som buffered reader tar in fileReader osv...
         Shape redCircle = new RedShapeDecorator(new Circle());
 
+        // Ger ett meddelande
         circle.draw();
+
         System.out.println();
+
+        // ger circle medd + border color red
         redCircle.draw();
     }
 }
