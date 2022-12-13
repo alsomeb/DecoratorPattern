@@ -2,7 +2,6 @@ package org.example;
 
 public class RedShapeDecorator extends ShapeDecorator {
 
-
     public RedShapeDecorator(Shape decoratedShape) {
         super(decoratedShape);
     }
@@ -11,7 +10,7 @@ public class RedShapeDecorator extends ShapeDecorator {
     @Override
     public void draw() {
         decoratedShape.draw();
-        setRedBorder(decoratedShape);
+        setRedBorder(decoratedShape); // Mer funktionalitet, Red Shape har extra metod
     }
 
     private void setRedBorder(Shape decoratedShape) {
