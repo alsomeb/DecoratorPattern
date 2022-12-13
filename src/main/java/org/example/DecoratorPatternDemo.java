@@ -10,6 +10,5 @@ public class DecoratorPatternDemo {
 
         circle.draw();
         redCircle.draw();
-
     }
 }
