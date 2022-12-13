@@ -9,6 +9,7 @@ public class DecoratorPatternDemo {
         Shape redCircle = new RedShapeDecorator(new Circle());
 
         circle.draw();
+        System.out.println();
         redCircle.draw();
     }
 }
